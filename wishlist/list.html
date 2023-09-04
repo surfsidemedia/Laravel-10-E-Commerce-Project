@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="7eLYXIhbiPe75wx6V3Jp54QgiAZUsjNqmVReOAcu">
+    <meta name="csrf-token" content="MkRqEzTGuoSx6LqJUm0OAKxSgNUYt26wTT7RMUZY">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="../assets/images/favicon.ico">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
@@ -51,6 +51,60 @@
 </head>
 
 <body class="theme-color4 light ltr">
+    <style>
+        header .profile-dropdown ul li {
+            display: block;
+            padding: 5px 20px;
+            border-bottom: 1px solid #ddd;
+            line-height: 35px;
+        }
+
+        header .profile-dropdown ul li:last-child {
+            border-color: #fff;
+        }
+
+        header .profile-dropdown ul {
+            padding: 10px 0;
+            min-width: 250px;
+        }
+
+        .name-usr {
+            background: #e87316;
+            padding: 8px 12px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 24px;
+        }
+
+        .name-usr span {
+            margin-right: 10px;
+        }
+
+        @media (max-width:600px) {
+            .h-logo {
+                max-width: 150px !important;
+            }
+
+            i.sidebar-bar {
+                font-size: 22px;
+            }
+
+            .mobile-menu ul li a svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .mobile-menu ul li a span {
+                margin-top: 0px;
+                font-size: 12px;
+            }
+
+            .name-usr {
+                padding: 5px 12px;
+            }
+        }
+    </style>
     <header class="header-style-2" id="home">
         <div class="main-header navbar-searchbar">
             <div class="container-fluid-lg">
@@ -64,217 +118,7 @@
                                             alt="logo">
                                     </a>
                                 </div>
-                                <div class="category-menu">
-                                    <div class="category-dropdown">
-                                        <div class="close-btn d-xl-none">
-                                            Category List
-                                            <span class="back-category"><i class="fa fa-angle-left"></i>
-                                            </span>
-                                        </div>
-                                        <ul>
-                                            <li class="submenu">
-                                                <a href="javascript:void(0)">watches</a>
-                                                <ul class="category-mega-menu">
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Brands</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Coros</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Titan</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Citizen</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Casio</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Movado</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Tissot</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Display</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Analog</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Digital</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Hybrid</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Tactile</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Touchscreen</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Style</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Casual</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Dress</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Fashion</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Luxury</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-banner">
-                                                                    <!-- <img src="http://localhost:8000/assets/images/electronics/banner/4.jpg" class="img-fluid blur-up lazyload" alt=""> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">footwear</a>
-                                            </li>
 
-                                            <li class="submenu">
-                                                <a href="javascript:void(0)">clothing</a>
-                                                <ul class="category-mega-menu">
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Women's fashion</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Dress</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Skirts</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Western
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Etahnic
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Sports
-                                                                                wear</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Men's fashion</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Sports
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Etahnic
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Western
-                                                                                wear</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Accesories</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">earrings</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">fashion
-                                                                                jewellery</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">ties</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">caps and
-                                                                                hats</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a
-                                                                                href="shop-left-sidebar.php">cufflinks</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">precious
-                                                                                jewellery</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a
-                                                                                href="shop-left-sidebar.php">necklaces</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-banner">
-                                                                    <img src="../assets/images/banner/1.jpg"
-                                                                        class="img-fluid blur-up lazyload" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Accessories</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Home &amp; decor</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Bags</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Kitchan</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <nav>
                                 <div class="main-navbar">
@@ -296,28 +140,7 @@
                                             <li><a href="../about-us.html" class="nav-link menu-title">About Us</a></li>
                                             <li><a href="../contact-us.html" class="nav-link menu-title">Contact Us</a>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="javascript:void(0)" class="nav-link menu-title">blog</a>
-                                                <ul class="nav-submenu menu-content">
-                                                    <li>
-                                                        <a href="blog-details.php">Blog Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-infinite-scroll.php">Blog Infinite Scroll</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="mobile-poster d-flex d-xl-none">
-                                                <img src="../assets/images/pwa.png" class="img-fluid" alt="">
-                                                <div class="mobile-contain">
-                                                    <h5>Enjoy app-like experience</h5>
-                                                    <p class="font-light">With this Screen option you can use Website
-                                                        like an App.</p>
-                                                    <a href="javascript:void(0)" id="installApp"
-                                                        class="btn btn-solid-default btn-spacing w-100">ADD TO
-                                                        HOMESCREEN</a>
-                                                </div>
-                                            </li>
+                                            <li><a href="../blog.html" class="nav-link menu-title">Blog</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -350,7 +173,7 @@
                                         </div>
                                     </li>
                                     <li class="onhover-dropdown">
-                                        <div class="cart-media">
+                                        <div class="cart-media name-usr">
                                             <i data-feather="user"></i>
                                         </div>
                                         <div class="onhover-div profile-dropdown">
@@ -368,7 +191,7 @@
                                 </ul>
                             </div>
                             <div class="search-full">
-                                <form method="GET" class="search-full" action="http://localhost:8000/search">
+                                <form method="GET" class="search-full" action="search">
                                     <div class="input-group">
                                         <span class="input-group-text">
                                             <i data-feather="search" class="font-light"></i>
@@ -397,7 +220,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)" class="toggle-category">
+                <a href="javascript:void(0)">
                     <i data-feather="align-justify"></i>
                     <span>Category</span>
                 </a>
@@ -429,7 +252,7 @@
             cursor: not-allowed;
         }
     </style>
-    <section class="breadcrumb-section section-b-space">
+    <section class="breadcrumb-section section-b-space" style="padding-top:20px;padding-bottom:20px;">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -460,18 +283,20 @@
             </div>
         </div>
     </section>
+
     <!-- Cart Section Start -->
-    <section class="wish-list-section section-b-space">
+    <section class="cart-section section-b-space">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 table-responsive">
-                    <table class="table cart-table wishlist-table">
+                <div class="col-md-12 text-center">
+                    <table class="table cart-table">
                         <thead>
                             <tr class="table-head">
                                 <th scope="col">image</th>
                                 <th scope="col">product name</th>
                                 <th scope="col">price</th>
-                                <th scope="col">availability</th>
+                                <th scope="col">quantity</th>
+                                <th scope="col">total</th>
                                 <th scope="col">action</th>
                             </tr>
                         </thead>
@@ -479,48 +304,51 @@
 
                             <tr>
                                 <td>
-                                    <a href="details.php">
-                                        <img src="http://localhost:8000/assets/images/fashion/product/front/24.jpg"
-                                            class="blur-up lazyloaded" alt="">
+                                    <a href="../product/details.html">
+                                        <img src="../assets/images/fashion/product/front/24.jpg" class="blur-up lazyloaded"
+                                            alt="">
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="details.php" class="font-light">A Porro Voluptatibus Dolores</a>
+                                    <a href="../product/details.html">A Porro
+                                        Voluptatibus Dolores</a>
                                     <div class="mobile-cart-content row">
                                         <div class="col">
-                                            <p>In Stock</p>
+                                            <div class="qty-box">
+                                                <div class="input-group">
+                                                    <input type="text" name="quantity" class="form-control input-number"
+                                                        value="1">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col">
-                                            <p class="fw-bold">$18</p>
+                                            <h2>$18</h2>
                                         </div>
                                         <div class="col">
                                             <h2 class="td-color">
-                                                <a href="javascript:void(0)" class="icon">
+                                                <a href="javascript:void(0)">
                                                     <i class="fas fa-times"></i>
-                                                </a>
-                                            </h2>
-                                            <h2 class="td-color">
-                                                <a href="cart.php" class="icon">
-                                                    <i class="fas fa-shopping-cart"></i>
                                                 </a>
                                             </h2>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="fw-bold">$18</p>
+                                    <h2>$18</h2>
                                 </td>
                                 <td>
-                                    <p>In Stock</p>
+                                    <div class="qty-box">
+                                        <div class="input-group">
+                                            <input type="number" name="quantity" class="form-control input-number"
+                                                value="1">
+                                        </div>
+                                    </div>
                                 </td>
                                 <td>
-
-                                    <a href="javascript:void(0)"
-                                        onclick="moveToCart('ba02b0dddb000b25445168300c65386d')" class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="javascript:void(0)"
-                                        onclick="removeFromWishlist('ba02b0dddb000b25445168300c65386d')" class="icon">
+                                    <h2 class="td-color">$18.00</h2>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">
                                         <i class="fas fa-times"></i>
                                     </a>
                                 </td>
@@ -528,48 +356,51 @@
 
                             <tr>
                                 <td>
-                                    <a href="details.php">
-                                        <img src="http://localhost:8000/assets/images/fashion/product/front/20.jpg"
-                                            class="blur-up lazyloaded" alt="">
+                                    <a href="../product/details.html">
+                                        <img src="../assets/images/fashion/product/front/7.jpg" class="blur-up lazyloaded"
+                                            alt="">
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="details.php" class="font-light">Ut Sed Odit Eligendi</a>
+                                    <a href="../product/details.html">Et
+                                        Voluptatem Repellendus Pariatur</a>
                                     <div class="mobile-cart-content row">
                                         <div class="col">
-                                            <p>In Stock</p>
+                                            <div class="qty-box">
+                                                <div class="input-group">
+                                                    <input type="text" name="quantity" class="form-control input-number"
+                                                        value="1">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col">
-                                            <p class="fw-bold">$1</p>
+                                            <h2>$8</h2>
                                         </div>
                                         <div class="col">
                                             <h2 class="td-color">
-                                                <a href="javascript:void(0)" class="icon">
+                                                <a href="javascript:void(0)">
                                                     <i class="fas fa-times"></i>
-                                                </a>
-                                            </h2>
-                                            <h2 class="td-color">
-                                                <a href="cart.php" class="icon">
-                                                    <i class="fas fa-shopping-cart"></i>
                                                 </a>
                                             </h2>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="fw-bold">$1</p>
+                                    <h2>$8</h2>
                                 </td>
                                 <td>
-                                    <p>In Stock</p>
+                                    <div class="qty-box">
+                                        <div class="input-group">
+                                            <input type="number" name="quantity" class="form-control input-number"
+                                                value="1">
+                                        </div>
+                                    </div>
                                 </td>
                                 <td>
-
-                                    <a href="javascript:void(0)"
-                                        onclick="moveToCart('193f632644e06a307cba18917ab13924')" class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="javascript:void(0)"
-                                        onclick="removeFromWishlist('193f632644e06a307cba18917ab13924')" class="icon">
+                                    <h2 class="td-color">$8.00</h2>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)">
                                         <i class="fas fa-times"></i>
                                     </a>
                                 </td>
@@ -577,26 +408,71 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="col-12 mt-md-5 mt-4">
+                    <div class="row">
+                        <div class="col-sm-7 col-5 order-1">
+                            <div class="left-side-button text-end d-flex d-block justify-content-end">
+                                <a href="javascript:void(0)"
+                                    class="text-decoration-underline theme-color d-block text-capitalize">clear
+                                    all items</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-7">
+                            <div class="left-side-button float-start">
+                                <a href="../shop.html" class="btn btn-solid-default btn fw-bold mb-0 ms-0">
+                                    <i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-checkout-section">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="promo-section">
+                                <form class="row g-3">
+                                    <div class="col-7">
+                                        <input type="text" class="form-control" id="number" placeholder="Coupon Code">
+                                    </div>
+                                    <div class="col-5">
+                                        <button class="btn btn-solid-default rounded btn">Apply Coupon</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6 ">
+                            <div class="checkout-button">
+                                <a href="checkout" class="btn btn-solid-default btn fw-bold">
+                                    Check Out <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="cart-box">
+                                <div class="cart-box-details">
+                                    <div class="total-details">
+                                        <div class="top-details">
+                                            <h3>Cart Totals</h3>
+                                            <h6>Sub Total <span>$26.00</span></h6>
+                                            <h6>Tax <span>$5.46</span></h6>
+
+                                            <h6>Total <span>$31.46</span></h6>
+                                        </div>
+                                        <div class="bottom-details">
+                                            <a href="checkout">Process Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Cart Section End -->
 
-    <form id="moveToCart" action="http://localhost:8000/wishlist/move-to-cart" method="POST">
-        <input type="hidden" name="_token" value="7eLYXIhbiPe75wx6V3Jp54QgiAZUsjNqmVReOAcu">
-        <input type="hidden" id="rowId" name="rowId">
-    </form>
-    <form id="deleteFromWishlist" action="http://localhost:8000/wishlist/remove" method="POST">
-        <input type="hidden" name="_token" value="7eLYXIhbiPe75wx6V3Jp54QgiAZUsjNqmVReOAcu"> <input type="hidden"
-            name="_method" value="delete"> <input type="hidden" id="rowId_D" name="rowId">
-    </form>
-
-    <form id="clearWishlist" action="http://localhost:8000/wishlist/clear" method="POST">
-        <input type="hidden" name="_token" value="7eLYXIhbiPe75wx6V3Jp54QgiAZUsjNqmVReOAcu"> <input type="hidden"
-            name="_method" value="delete">
-    </form>
-
-    <footer class="footer-sm-space">
+    <footer class="footer-sm-space mt-5">
         <div class="main-footer">
             <div class="container">
                 <div class="row gy-4">
@@ -682,19 +558,19 @@
                             <div class="footer-content">
                                 <ul>
                                     <li>
-                                        <a href="my-account.php" class="font-dark">Your Orders</a>
+                                        <a href="#" class="font-dark">Your Orders</a>
                                     </li>
                                     <li>
-                                        <a href="my-account.php" class="font-dark">Your Account</a>
+                                        <a href="#" class="font-dark">Your Account</a>
                                     </li>
                                     <li>
-                                        <a href="order-tracking.php" class="font-dark">Track Orders</a>
+                                        <a href="#" class="font-dark">Track Orders</a>
                                     </li>
                                     <li>
-                                        <a href="wishlist.php" class="font-dark">Your Wishlist</a>
+                                        <a href="#" class="font-dark">Your Wishlist</a>
                                     </li>
                                     <li>
-                                        <a href="faq.php" class="font-dark">Shopping FAQs</a>
+                                        <a href="#" class="font-dark">Shopping FAQs</a>
                                     </li>
                                 </ul>
                             </div>
@@ -946,7 +822,7 @@
         $(function () {
             $('[data-bs-toggle="tooltip"]').tooltip()
         });
-    </script>    
+    </script>
 </body>
 
 </html>

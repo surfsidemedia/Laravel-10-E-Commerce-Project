@@ -439,21 +439,21 @@
                 }
             });
 
-        $(".button").click(function (e) {
-            var pX = e.pageX,
-                pY = e.pageY,
-                oX = parseInt($(this).offset().left),
-                oY = parseInt($(this).offset().top);
-            $(".x-" + oX + ".y-" + oY + "").animate({
-                width: "500px",
-                height: "500px",
-                top: "-250px",
-                left: "-250px",
-            },
-                600
-            );
-            $("button", this).addClass("active");
-        });
+        // $(".button").click(function (e) {
+        //     var pX = e.pageX,
+        //         pY = e.pageY,
+        //         oX = parseInt($(this).offset().left),
+        //         oY = parseInt($(this).offset().top);
+        //     $(".x-" + oX + ".y-" + oY + "").animate({
+        //         width: "500px",
+        //         height: "500px",
+        //         top: "-250px",
+        //         left: "-250px",
+        //     },
+        //         600
+        //     );
+        //     $("button", this).addClass("active");
+        // });
 
         $(".alt-2").on("click", function () {
             if (!$(this).hasClass("material-button")) {
@@ -489,39 +489,39 @@
             }
         });
 
-        $(".material-button").on("click", function () {
-            if ($(this).hasClass("material-button")) {
-                setTimeout(function () {
-                    $(".overbox").css({
-                        overflow: "hidden",
-                    });
-                    $(".box").addClass("back");
-                }, 200);
-                $(this).addClass("active").animate({
-                    width: "850px",
-                    height: "850px",
-                });
+        // $(".material-button").on("click", function () {
+        //     if ($(this).hasClass("material-button")) {
+        //         setTimeout(function () {
+        //             $(".overbox").css({
+        //                 overflow: "hidden",
+        //             });
+        //             $(".box").addClass("back");
+        //         }, 200);
+        //         $(this).addClass("active").animate({
+        //             width: "850px",
+        //             height: "850px",
+        //         });
 
-                setTimeout(function () {
-                    $(".shape").css({
-                        width: "50%",
-                        height: "50%",
-                        transform: "rotate(45deg)",
-                    });
+        //         setTimeout(function () {
+        //             $(".shape").css({
+        //                 width: "50%",
+        //                 height: "50%",
+        //                 transform: "rotate(45deg)",
+        //             });
 
-                    $(".overbox .title").fadeIn(300);
-                    $(".overbox .input").fadeIn(300);
-                    $(".overbox .button").fadeIn(300);
-                }, 700);
+        //             $(".overbox .title").fadeIn(300);
+        //             $(".overbox .input").fadeIn(300);
+        //             $(".overbox .button").fadeIn(300);
+        //         }, 700);
 
-                $(this).removeClass("material-button");
-            }
+        //         $(this).removeClass("material-button");
+        //     }
 
-            if ($(".alt-2").hasClass("material-buton")) {
-                $(".alt-2").removeClass("material-buton");
-                $(".alt-2").addClass("material-button");
-            }
-        });
+        //     if ($(".alt-2").hasClass("material-buton")) {
+        //         $(".alt-2").removeClass("material-buton");
+        //         $(".alt-2").addClass("material-button");
+        //     }
+        // });
     });
 
     /*=====================

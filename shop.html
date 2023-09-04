@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="MkRqEzTGuoSx6LqJUm0OAKxSgNUYt26wTT7RMUZY">
+    <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="assets/images/favicon.ico">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -56,6 +58,60 @@
 </head>
 
 <body class="theme-color4 light ltr">
+    <style>
+        header .profile-dropdown ul li {
+            display: block;
+            padding: 5px 20px;
+            border-bottom: 1px solid #ddd;
+            line-height: 35px;
+        }
+
+        header .profile-dropdown ul li:last-child {
+            border-color: #fff;
+        }
+
+        header .profile-dropdown ul {
+            padding: 10px 0;
+            min-width: 250px;
+        }
+
+        .name-usr {
+            background: #e87316;
+            padding: 8px 12px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 24px;
+        }
+
+        .name-usr span {
+            margin-right: 10px;
+        }
+
+        @media (max-width:600px) {
+            .h-logo {
+                max-width: 150px !important;
+            }
+
+            i.sidebar-bar {
+                font-size: 22px;
+            }
+
+            .mobile-menu ul li a svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .mobile-menu ul li a span {
+                margin-top: 0px;
+                font-size: 12px;
+            }
+
+            .name-usr {
+                padding: 5px 12px;
+            }
+        }
+    </style>
     <header class="header-style-2" id="home">
         <div class="main-header navbar-searchbar">
             <div class="container-fluid-lg">
@@ -69,217 +125,7 @@
                                             alt="logo">
                                     </a>
                                 </div>
-                                <div class="category-menu">
-                                    <div class="category-dropdown">
-                                        <div class="close-btn d-xl-none">
-                                            Category List
-                                            <span class="back-category"><i class="fa fa-angle-left"></i>
-                                            </span>
-                                        </div>
-                                        <ul>
-                                            <li class="submenu">
-                                                <a href="javascript:void(0)">watches</a>
-                                                <ul class="category-mega-menu">
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Brands</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Coros</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Titan</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Citizen</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Casio</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Movado</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Tissot</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Display</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Analog</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Digital</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Hybrid</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Tactile</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Touchscreen</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Watch Style</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Casual</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Dress</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Fashion</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">Luxury</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-banner">
-                                                                    <!-- <img src="http://localhost:8000/assets/images/electronics/banner/4.jpg" class="img-fluid blur-up lazyload" alt=""> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">footwear</a>
-                                            </li>
 
-                                            <li class="submenu">
-                                                <a href="javascript:void(0)">clothing</a>
-                                                <ul class="category-mega-menu">
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Women's fashion</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Dress</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Skirts</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Western
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Etahnic
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Sports
-                                                                                wear</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Men's fashion</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Sports
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Etahnic
-                                                                                wear</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">Western
-                                                                                wear</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-childmenu">
-                                                                    <div class="title-category">
-                                                                        <h6>Accesories</h6>
-                                                                    </div>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">earrings</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">fashion
-                                                                                jewellery</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">ties</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">caps and
-                                                                                hats</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a
-                                                                                href="shop-left-sidebar.php">cufflinks</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="shop-left-sidebar.php">precious
-                                                                                jewellery</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a
-                                                                                href="shop-left-sidebar.php">necklaces</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-3">
-                                                                <div class="category-banner">
-                                                                    <img src="assets/images/banner/1.jpg"
-                                                                        class="img-fluid blur-up lazyload" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Accessories</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Home &amp; decor</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Bags</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">Kitchan</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <nav>
                                 <div class="main-navbar">
@@ -301,28 +147,7 @@
                                             <li><a href="about-us.html" class="nav-link menu-title">About Us</a></li>
                                             <li><a href="contact-us.html" class="nav-link menu-title">Contact Us</a>
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="javascript:void(0)" class="nav-link menu-title">blog</a>
-                                                <ul class="nav-submenu menu-content">
-                                                    <li>
-                                                        <a href="blog-details.php">Blog Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-infinite-scroll.php">Blog Infinite Scroll</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="mobile-poster d-flex d-xl-none">
-                                                <img src="assets/images/pwa.png" class="img-fluid" alt="">
-                                                <div class="mobile-contain">
-                                                    <h5>Enjoy app-like experience</h5>
-                                                    <p class="font-light">With this Screen option you can use Website
-                                                        like an App.</p>
-                                                    <a href="javascript:void(0)" id="installApp"
-                                                        class="btn btn-solid-default btn-spacing w-100">ADD TO
-                                                        HOMESCREEN</a>
-                                                </div>
-                                            </li>
+                                            <li><a href="blog.html" class="nav-link menu-title">Blog</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -355,7 +180,7 @@
                                         </div>
                                     </li>
                                     <li class="onhover-dropdown">
-                                        <div class="cart-media">
+                                        <div class="cart-media name-usr">
                                             <i data-feather="user"></i>
                                         </div>
                                         <div class="onhover-div profile-dropdown">
@@ -402,7 +227,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)" class="toggle-category">
+                <a href="javascript:void(0)">
                     <i data-feather="align-justify"></i>
                     <span>Category</span>
                 </a>
@@ -427,7 +252,7 @@
             </li>
         </ul>
     </div>
-    <section class="breadcrumb-section section-b-space">
+    <section class="breadcrumb-section section-b-space" style="padding-top:20px;padding-bottom:20px;">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -483,90 +308,90 @@
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br1" name="brands"
-                                                        value="1" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Quis Velit</label>
-                                                    <p class="font-light">(3)</p>
+                                                        value="1" type="checkbox">
+                                                    <label class="form-check-label">Quis Et</label>
+                                                    <p class="font-light">(1)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br2" name="brands"
-                                                        value="2" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Ut Minima</label>
-                                                    <p class="font-light">(1)</p>
+                                                        value="2" type="checkbox">
+                                                    <label class="form-check-label">Aliquam Doloremque</label>
+                                                    <p class="font-light">(0)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br3" name="brands"
-                                                        value="3" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Debitis Quos</label>
-                                                    <p class="font-light">(2)</p>
+                                                        value="3" type="checkbox">
+                                                    <label class="form-check-label">Sequi Repellendus</label>
+                                                    <p class="font-light">(1)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br4" name="brands"
-                                                        value="4" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Enim Veritatis</label>
-                                                    <p class="font-light">(3)</p>
+                                                        value="4" type="checkbox">
+                                                    <label class="form-check-label">Repellendus Quia</label>
+                                                    <p class="font-light">(2)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br5" name="brands"
-                                                        value="5" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Saepe Voluptatem</label>
-                                                    <p class="font-light">(1)</p>
+                                                        value="5" type="checkbox">
+                                                    <label class="form-check-label">Sint Iste</label>
+                                                    <p class="font-light">(0)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br6" name="brands"
-                                                        value="6" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Quibusdam Rerum</label>
-                                                    <p class="font-light">(1)</p>
+                                                        value="6" type="checkbox">
+                                                    <label class="form-check-label">Et Eos</label>
+                                                    <p class="font-light">(6)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br7" name="brands"
-                                                        value="7" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Velit Sunt</label>
-                                                    <p class="font-light">(7)</p>
+                                                        value="7" type="checkbox">
+                                                    <label class="form-check-label">Vel Explicabo</label>
+                                                    <p class="font-light">(2)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br8" name="brands"
-                                                        value="8" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Eos Possimus</label>
-                                                    <p class="font-light">(1)</p>
+                                                        value="8" type="checkbox">
+                                                    <label class="form-check-label">Ipsam Earum</label>
+                                                    <p class="font-light">(4)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br9" name="brands"
-                                                        value="9" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Repudiandae Qui</label>
-                                                    <p class="font-light">(3)</p>
+                                                        value="9" type="checkbox">
+                                                    <label class="form-check-label">Sequi Reprehenderit</label>
+                                                    <p class="font-light">(5)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="br10" name="brands"
-                                                        value="10" type="checkbox" onchange="filterBrand(this)">
-                                                    <label class="form-check-label">Maiores Quidem</label>
-                                                    <p class="font-light">(2)</p>
+                                                        value="10" type="checkbox">
+                                                    <label class="form-check-label">Sunt Corrupti</label>
+                                                    <p class="font-light">(3)</p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -700,35 +525,35 @@
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct1" name="categories"
-                                                        type="checkbox" value="1" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Sint Possimus</label>
-                                                    <p class="font-light">(5)</p>
+                                                        type="checkbox" value="1">
+                                                    <label class="form-check-label">Qui Ut</label>
+                                                    <p class="font-light">(7)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct2" name="categories"
-                                                        type="checkbox" value="2" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Ea Voluptas</label>
-                                                    <p class="font-light">(2)</p>
+                                                        type="checkbox" value="2">
+                                                    <label class="form-check-label">Blanditiis Error</label>
+                                                    <p class="font-light">(8)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct3" name="categories"
-                                                        type="checkbox" value="3" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Autem Recusandae</label>
-                                                    <p class="font-light">(3)</p>
+                                                        type="checkbox" value="3">
+                                                    <label class="form-check-label">Quam Quos</label>
+                                                    <p class="font-light">(0)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct4" name="categories"
-                                                        type="checkbox" value="4" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Minima Est</label>
+                                                        type="checkbox" value="4">
+                                                    <label class="form-check-label">Cupiditate Minus</label>
                                                     <p class="font-light">(5)</p>
                                                 </div>
                                             </li>
@@ -736,17 +561,17 @@
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct5" name="categories"
-                                                        type="checkbox" value="5" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Minima Voluptatem</label>
-                                                    <p class="font-light">(9)</p>
+                                                        type="checkbox" value="5">
+                                                    <label class="form-check-label">Dolores Et</label>
+                                                    <p class="font-light">(4)</p>
                                                 </div>
                                             </li>
 
                                             <li>
                                                 <div class="form-check ps-0 custome-form-check">
                                                     <input class="checkbox_animated check-it" id="ct6" name="categories"
-                                                        type="checkbox" value="6" onchange="filterCategory(this)">
-                                                    <label class="form-check-label">Quod Quisquam</label>
+                                                        type="checkbox" value="6">
+                                                    <label class="form-check-label">Quis Repudiandae</label>
                                                     <p class="font-light">(0)</p>
                                                 </div>
                                             </li>
@@ -873,36 +698,31 @@
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/minima-omnis-iste-rerum.html">
-                                            <img src="assets/images/fashion/product/front/23.jpg"
+                                        <a href="product/nihil-beatae-sit-sed.html">
+                                            <img src="assets/images/fashion/product/front/12.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/minima-omnis-iste-rerum.html">
-                                            <img src="assets/images/fashion/product/back/23.jpg"
+                                        <a href="product/nihil-beatae-sit-sed.html">
+                                            <img src="assets/images/fashion/product/back/12.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-wrap">
                                         <ul>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(24,'Minima Omnis Iste Rerum',13,1)"
-                                                    class="addtocart-btn">
+                                                <a href="javascript:void(0)" class="addtocart-btn">
                                                     <i data-feather="shopping-cart"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('minima-omnis-iste-rerum')">
+                                                <a href="javascript:void(0)">
                                                     <i data-feather="eye"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(24,'Minima Omnis Iste Rerum',13,1)"
-                                                    class="wishlist">
+                                                <a href="javascript:void(0)" class="wishlist">
                                                     <i data-feather="heart"></i>
                                                 </a>
                                             </li>
@@ -911,7 +731,7 @@
                                 </div>
                                 <div class="product-details">
                                     <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Est</span>
+                                        <span class="font-light grid-content">Cupiditate Minus</span>
                                         <ul class="rating mt-0">
                                             <li>
                                                 <i class="fas fa-star theme-color"></i>
@@ -931,18 +751,17 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/minima-omnis-iste-rerum.html" class="font-default">
-                                            <h5 class="ms-0">Minima Omnis Iste Rerum</h5>
+                                        <a href="product/nihil-beatae-sit-sed.html" class="font-default">
+                                            <h5 class="ms-0">Nihil Beatae Sit Sed</h5>
                                         </a>
                                         <div class="listing-content">
-                                            <span class="font-light">Minima Est</span>
-                                            <p class="font-light">Quasi consequatur quod fugit repellendus quis.
-                                                Asperiores vitae molestiae modi rerum alias. Ipsum est recusandae
-                                                occaecati omnis non aut. Aut laudantium quia harum temporibus.</p>
+                                            <span class="font-light">Cupiditate Minus</span>
+                                            <p class="font-light">Aut et dolores ipsam dolores aspernatur. Id nostrum
+                                                itaque maxime ea at inventore nam. Repudiandae dolor recusandae sint
+                                                magnam praesentium.</p>
                                         </div>
-                                        <h3 class="theme-color">$13</h3>
-                                        <button onclick="addProductToCart(24,'Minima Omnis Iste Rerum',13,1)"
-                                            class="btn listing-content">Add To Cart</button>
+                                        <h3 class="theme-color">$19</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -953,36 +772,31 @@
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/a-porro-voluptatibus-dolores.html">
-                                            <img src="assets/images/fashion/product/front/24.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/2.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/a-porro-voluptatibus-dolores.html">
-                                            <img src="assets/images/fashion/product/back/24.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/2.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-wrap">
                                         <ul>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(23,'A Porro Voluptatibus Dolores',18,1)"
-                                                    class="addtocart-btn">
+                                                <a href="javascript:void(0)" class="addtocart-btn">
                                                     <i data-feather="shopping-cart"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('a-porro-voluptatibus-dolores')">
+                                                <a href="javascript:void(0)">
                                                     <i data-feather="eye"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(23,'A Porro Voluptatibus Dolores',18,1)"
-                                                    class="wishlist">
+                                                <a href="javascript:void(0)" class="wishlist">
                                                     <i data-feather="heart"></i>
                                                 </a>
                                             </li>
@@ -991,7 +805,7 @@
                                 </div>
                                 <div class="product-details">
                                     <div class="rating-details">
-                                        <span class="font-light grid-content">Autem Recusandae</span>
+                                        <span class="font-light grid-content">Dolores Et</span>
                                         <ul class="rating mt-0">
                                             <li>
                                                 <i class="fas fa-star theme-color"></i>
@@ -1011,18 +825,17 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/a-porro-voluptatibus-dolores.html" class="font-default">
-                                            <h5 class="ms-0">A Porro Voluptatibus Dolores</h5>
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Doloremque Quibusdam Maxime Natus</h5>
                                         </a>
                                         <div class="listing-content">
-                                            <span class="font-light">Autem Recusandae</span>
-                                            <p class="font-light">Inventore reprehenderit quis iure quia ullam sed qui.
-                                                Quia esse dolorem molestiae. Quidem dolor libero suscipit voluptatibus
-                                                sed. Nemo est voluptatibus consequatur exercitationem assumenda.</p>
+                                            <span class="font-light">Dolores Et</span>
+                                            <p class="font-light">Hic fugiat molestiae sed. Impedit iusto nihil odio
+                                                eos. Nisi et est aperiam ut non culpa amet. Nemo aut et ipsa pariatur
+                                                cumque. Totam eveniet voluptatibus nostrum.</p>
                                         </div>
-                                        <h3 class="theme-color">$18</h3>
-                                        <button onclick="addProductToCart(23,'A Porro Voluptatibus Dolores',18,1)"
-                                            class="btn listing-content">Add To Cart</button>
+                                        <h3 class="theme-color">$11</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -1033,574 +846,13 @@
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/perspiciatis-culpa-omnis-non.html">
-                                            <img src="assets/images/fashion/product/front/23.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/perspiciatis-culpa-omnis-non.html">
-                                            <img src="assets/images/fashion/product/back/23.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(22,'Perspiciatis Culpa Omnis Non',8,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('perspiciatis-culpa-omnis-non')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(22,'Perspiciatis Culpa Omnis Non',8,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/perspiciatis-culpa-omnis-non.html" class="font-default">
-                                            <h5 class="ms-0">Perspiciatis Culpa Omnis Non</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Vel praesentium dolorem qui provident. Adipisci ut ut
-                                                sequi id quibusdam impedit. Earum vel quidem perspiciatis ea ut ad
-                                                optio. Accusamus qui et soluta facilis voluptas omnis cupiditate.</p>
-                                        </div>
-                                        <h3 class="theme-color">$8</h3>
-                                        <button onclick="addProductToCart(22,'Perspiciatis Culpa Omnis Non',8,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/et-voluptatem-repellendus-pariatur.html">
-                                            <img src="assets/images/fashion/product/front/7.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/et-voluptatem-repellendus-pariatur.html">
-                                            <img src="assets/images/fashion/product/back/7.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(21,'Et Voluptatem Repellendus Pariatur',8,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('et-voluptatem-repellendus-pariatur')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(21,'Et Voluptatem Repellendus Pariatur',8,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Ea Voluptas</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/et-voluptatem-repellendus-pariatur.html" class="font-default">
-                                            <h5 class="ms-0">Et Voluptatem Repellendus Pariatur</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Ea Voluptas</span>
-                                            <p class="font-light">Odit incidunt magni minus voluptate. Enim illum et
-                                                dolorem et veniam voluptatem. Et recusandae repudiandae sed occaecati.
-                                                Ipsum beatae corporis sapiente sit ullam inventore vitae.</p>
-                                        </div>
-                                        <h3 class="theme-color">$8</h3>
-                                        <button onclick="addProductToCart(21,'Et Voluptatem Repellendus Pariatur',8,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/dignissimos-et-aut-eligendi.html">
-                                            <img src="assets/images/fashion/product/front/24.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/dignissimos-et-aut-eligendi.html">
-                                            <img src="assets/images/fashion/product/back/24.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(20,'Dignissimos Et Aut Eligendi',12,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('dignissimos-et-aut-eligendi')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(20,'Dignissimos Et Aut Eligendi',12,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Sint Possimus</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/dignissimos-et-aut-eligendi.html" class="font-default">
-                                            <h5 class="ms-0">Dignissimos Et Aut Eligendi</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Sint Possimus</span>
-                                            <p class="font-light">Ea aut perspiciatis sit minus omnis molestias. Nulla
-                                                tempora est perspiciatis labore at minima nesciunt. Repellat consequatur
-                                                sit ea minima necessitatibus. Rerum in quo dicta assumenda aut.</p>
-                                        </div>
-                                        <h3 class="theme-color">$12</h3>
-                                        <button onclick="addProductToCart(20,'Dignissimos Et Aut Eligendi',12,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/ut-sed-odit-eligendi.html">
-                                            <img src="assets/images/fashion/product/front/20.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/ut-sed-odit-eligendi.html">
-                                            <img src="assets/images/fashion/product/back/20.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(19,'Ut Sed Odit Eligendi',1,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('ut-sed-odit-eligendi')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(19,'Ut Sed Odit Eligendi',1,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/ut-sed-odit-eligendi.html" class="font-default">
-                                            <h5 class="ms-0">Ut Sed Odit Eligendi</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Neque harum atque et harum qui voluptas. Omnis
-                                                repellat unde voluptatem accusamus ipsam. Repellat porro laudantium
-                                                quaerat quis et facere ipsum. Et eaque et aut architecto qui.</p>
-                                        </div>
-                                        <h3 class="theme-color">$1</h3>
-                                        <button onclick="addProductToCart(19,'Ut Sed Odit Eligendi',1,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/est-quo-totam-commodi.html">
-                                            <img src="assets/images/fashion/product/front/22.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/est-quo-totam-commodi.html">
-                                            <img src="assets/images/fashion/product/back/22.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(18,'Est Quo Totam Commodi',7,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('est-quo-totam-commodi')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(18,'Est Quo Totam Commodi',7,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Autem Recusandae</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/est-quo-totam-commodi.html" class="font-default">
-                                            <h5 class="ms-0">Est Quo Totam Commodi</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Autem Recusandae</span>
-                                            <p class="font-light">Nemo a voluptatibus tempora pariatur atque officia
-                                                ducimus. Vitae asperiores dolor iste impedit. Ex pariatur illum ipsa et
-                                                consequatur magni.</p>
-                                        </div>
-                                        <h3 class="theme-color">$7</h3>
-                                        <button onclick="addProductToCart(18,'Est Quo Totam Commodi',7,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/eos-iste-reiciendis-sed.html">
-                                            <img src="assets/images/fashion/product/front/18.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/eos-iste-reiciendis-sed.html">
-                                            <img src="assets/images/fashion/product/back/18.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(17,'Eos Iste Reiciendis Sed',8,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('eos-iste-reiciendis-sed')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(17,'Eos Iste Reiciendis Sed',8,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/eos-iste-reiciendis-sed.html" class="font-default">
-                                            <h5 class="ms-0">Eos Iste Reiciendis Sed</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Veniam quibusdam et harum voluptatibus. Officiis ipsa
-                                                dolor ab adipisci. Illum voluptate qui quisquam accusamus beatae est.
-                                            </p>
-                                        </div>
-                                        <h3 class="theme-color">$8</h3>
-                                        <button onclick="addProductToCart(17,'Eos Iste Reiciendis Sed',8,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/magnam-non-molestias-et.html">
-                                            <img src="assets/images/fashion/product/front/4.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="back">
-                                        <a href="product/magnam-non-molestias-et.html">
-                                            <img src="assets/images/fashion/product/back/4.jpg"
-                                                class="bg-img blur-up lazyload" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="cart-wrap">
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(16,'Magnam Non Molestias Et',17,1)"
-                                                    class="addtocart-btn">
-                                                    <i data-feather="shopping-cart"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('magnam-non-molestias-et')">
-                                                    <i data-feather="eye"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(16,'Magnam Non Molestias Et',17,1)"
-                                                    class="wishlist">
-                                                    <i data-feather="heart"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
-                                        <ul class="rating mt-0">
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star theme-color"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-star"></i>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="main-price">
-                                        <a href="product/magnam-non-molestias-et.html" class="font-default">
-                                            <h5 class="ms-0">Magnam Non Molestias Et</h5>
-                                        </a>
-                                        <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Perspiciatis maxime ducimus aut eligendi rem. Omnis
-                                                est sed molestias non sed corporis. Voluptatum voluptate quasi et
-                                                minima. Illo expedita ut pariatur veritatis veritatis explicabo sunt.
-                                            </p>
-                                        </div>
-                                        <h3 class="theme-color">$17</h3>
-                                        <button onclick="addProductToCart(16,'Magnam Non Molestias Et',17,1)"
-                                            class="btn listing-content">Add To Cart</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="product-box">
-                                <div class="img-wrapper">
-                                    <div class="front">
-                                        <a href="product/aspernatur-corporis-magni-et.html">
+                                        <a href="product/details.html">
                                             <img src="assets/images/fashion/product/front/3.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/aspernatur-corporis-magni-et.html">
+                                        <a href="product/details.html">
                                             <img src="assets/images/fashion/product/back/3.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
@@ -1608,22 +860,17 @@
                                     <div class="cart-wrap">
                                         <ul>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(15,'Aspernatur Corporis Magni Et',6,1)"
-                                                    class="addtocart-btn">
+                                                <a href="javascript:void(0)" class="addtocart-btn">
                                                     <i data-feather="shopping-cart"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('aspernatur-corporis-magni-et')">
+                                                <a href="javascript:void(0)">
                                                     <i data-feather="eye"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(15,'Aspernatur Corporis Magni Et',6,1)"
-                                                    class="wishlist">
+                                                <a href="javascript:void(0)" class="wishlist">
                                                     <i data-feather="heart"></i>
                                                 </a>
                                             </li>
@@ -1632,7 +879,7 @@
                                 </div>
                                 <div class="product-details">
                                     <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
+                                        <span class="font-light grid-content">Qui Ut</span>
                                         <ul class="rating mt-0">
                                             <li>
                                                 <i class="fas fa-star theme-color"></i>
@@ -1652,17 +899,18 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/aspernatur-corporis-magni-et.html" class="font-default">
-                                            <h5 class="ms-0">Aspernatur Corporis Magni Et</h5>
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Fuga Officia Quaerat Fugiat</h5>
                                         </a>
                                         <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Et et atque alias dicta vel dicta illo nam. Enim
-                                                repellat inventore illum doloremque. Enim rerum labore excepturi.</p>
+                                            <span class="font-light">Qui Ut</span>
+                                            <p class="font-light">Consequuntur aperiam voluptates sequi exercitationem.
+                                                Voluptatem alias consequatur soluta laborum dolor. Qui illum sint
+                                                voluptate. Eos sit sed ea. Hic sunt commodi ea rem recusandae suscipit
+                                                ad.</p>
                                         </div>
-                                        <h3 class="theme-color">$6</h3>
-                                        <button onclick="addProductToCart(15,'Aspernatur Corporis Magni Et',6,1)"
-                                            class="btn listing-content">Add To Cart</button>
+                                        <h3 class="theme-color">$4</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -1673,36 +921,31 @@
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/modi-porro-possimus-corrupti.html">
-                                            <img src="assets/images/fashion/product/front/15.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/17.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/modi-porro-possimus-corrupti.html">
-                                            <img src="assets/images/fashion/product/back/15.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/17.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-wrap">
                                         <ul>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(14,'Modi Porro Possimus Corrupti',5,1)"
-                                                    class="addtocart-btn">
+                                                <a href="javascript:void(0)" class="addtocart-btn">
                                                     <i data-feather="shopping-cart"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('modi-porro-possimus-corrupti')">
+                                                <a href="javascript:void(0)">
                                                     <i data-feather="eye"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(14,'Modi Porro Possimus Corrupti',5,1)"
-                                                    class="wishlist">
+                                                <a href="javascript:void(0)" class="wishlist">
                                                     <i data-feather="heart"></i>
                                                 </a>
                                             </li>
@@ -1711,7 +954,7 @@
                                 </div>
                                 <div class="product-details">
                                     <div class="rating-details">
-                                        <span class="font-light grid-content">Minima Voluptatem</span>
+                                        <span class="font-light grid-content">Blanditiis Error</span>
                                         <ul class="rating mt-0">
                                             <li>
                                                 <i class="fas fa-star theme-color"></i>
@@ -1731,19 +974,163 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/modi-porro-possimus-corrupti.html" class="font-default">
-                                            <h5 class="ms-0">Modi Porro Possimus Corrupti</h5>
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Nulla Sapiente Sunt Ipsam</h5>
                                         </a>
                                         <div class="listing-content">
-                                            <span class="font-light">Minima Voluptatem</span>
-                                            <p class="font-light">Ut officiis suscipit ad temporibus molestias
-                                                architecto. Vel ut minima sit maxime. Nihil itaque qui ipsam suscipit
-                                                fugiat eos. Dignissimos qui in quis. Delectus assumenda eum natus
-                                                molestiae.</p>
+                                            <span class="font-light">Blanditiis Error</span>
+                                            <p class="font-light">Veritatis deleniti occaecati sint ea quis omnis
+                                                voluptates. Mollitia voluptatem doloribus harum pariatur reprehenderit.
+                                                Eius est natus voluptate qui voluptatum dolorem ut.</p>
+                                        </div>
+                                        <h3 class="theme-color">$8</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/10.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/10.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Dolores Et</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Quia Non Soluta Aut</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Dolores Et</span>
+                                            <p class="font-light">Et delectus sint rerum sequi qui enim repellendus.
+                                                Minus omnis autem inventore vel. Est dolore debitis id in.</p>
+                                        </div>
+                                        <h3 class="theme-color">$3</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/10.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/10.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Dolores Et</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Dolorem Libero Tempore Voluptatem</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Dolores Et</span>
+                                            <p class="font-light">Sunt aut eveniet dolor iusto dolorem et at. Porro
+                                                delectus eveniet minima et. Amet esse earum repudiandae.</p>
                                         </div>
                                         <h3 class="theme-color">$5</h3>
-                                        <button onclick="addProductToCart(14,'Modi Porro Possimus Corrupti',5,1)"
-                                            class="btn listing-content">Add To Cart</button>
+                                        <button class="btn listing-content">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -1754,36 +1141,31 @@
                             <div class="product-box">
                                 <div class="img-wrapper">
                                     <div class="front">
-                                        <a href="product/optio-facilis-non-culpa.html">
-                                            <img src="assets/images/fashion/product/front/21.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/3.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="back">
-                                        <a href="product/optio-facilis-non-culpa.html">
-                                            <img src="assets/images/fashion/product/back/21.jpg"
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/3.jpg"
                                                 class="bg-img blur-up lazyload" alt="">
                                         </a>
                                     </div>
                                     <div class="cart-wrap">
                                         <ul>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToCart(13,'Optio Facilis Non Culpa',14,1)"
-                                                    class="addtocart-btn">
+                                                <a href="javascript:void(0)" class="addtocart-btn">
                                                     <i data-feather="shopping-cart"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="loadQviewProduct('optio-facilis-non-culpa')">
+                                                <a href="javascript:void(0)">
                                                     <i data-feather="eye"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0)"
-                                                    onclick="addProductToWhishlist(13,'Optio Facilis Non Culpa',14,1)"
-                                                    class="wishlist">
+                                                <a href="javascript:void(0)" class="wishlist">
                                                     <i data-feather="heart"></i>
                                                 </a>
                                             </li>
@@ -1792,7 +1174,7 @@
                                 </div>
                                 <div class="product-details">
                                     <div class="rating-details">
-                                        <span class="font-light grid-content">Ea Voluptas</span>
+                                        <span class="font-light grid-content">Cupiditate Minus</span>
                                         <ul class="rating mt-0">
                                             <li>
                                                 <i class="fas fa-star theme-color"></i>
@@ -1812,18 +1194,386 @@
                                         </ul>
                                     </div>
                                     <div class="main-price">
-                                        <a href="product/optio-facilis-non-culpa.html" class="font-default">
-                                            <h5 class="ms-0">Optio Facilis Non Culpa</h5>
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Non Sed Tempora Accusamus</h5>
                                         </a>
                                         <div class="listing-content">
-                                            <span class="font-light">Ea Voluptas</span>
-                                            <p class="font-light">Reiciendis fugit molestias aut sed nobis. Quod eaque
-                                                est exercitationem. Nam necessitatibus in quod ipsam. Voluptatibus
-                                                voluptas error maxime magni ipsam corporis aliquid.</p>
+                                            <span class="font-light">Cupiditate Minus</span>
+                                            <p class="font-light">In saepe non rerum voluptas rerum ducimus. Et
+                                                repellendus ut delectus velit voluptatibus dolores sunt minima. Nobis
+                                                dicta culpa magni temporibus ea temporibus commodi.</p>
                                         </div>
-                                        <h3 class="theme-color">$14</h3>
-                                        <button onclick="addProductToCart(13,'Optio Facilis Non Culpa',14,1)"
-                                            class="btn listing-content">Add To Cart</button>
+                                        <h3 class="theme-color">$4</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/24.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/24.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Cupiditate Minus</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Non Tempora Commodi Et</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Cupiditate Minus</span>
+                                            <p class="font-light">At quia non quas molestiae omnis id omnis. Voluptas
+                                                delectus officia quidem minus repudiandae placeat. Dolorem suscipit quas
+                                                ipsam tempore voluptates cumque officia.</p>
+                                        </div>
+                                        <h3 class="theme-color">$8</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/23.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/23.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Cupiditate Minus</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Qui Laboriosam Quas Beatae</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Cupiditate Minus</span>
+                                            <p class="font-light">Dolorem nihil quia qui laudantium expedita aut dolor.
+                                                Qui eligendi voluptatem autem ullam et. Voluptas nemo eum nihil aliquam
+                                                eos aperiam. Numquam dolorum veniam non magnam illum odit deleniti.</p>
+                                        </div>
+                                        <h3 class="theme-color">$1</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/20.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/20.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Qui Ut</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Excepturi Et In Cum</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Qui Ut</span>
+                                            <p class="font-light">Sed voluptatem nesciunt consequatur tempora maxime sit
+                                                quae. Ea et esse sed voluptas quia eum. Culpa autem beatae aut eaque vel
+                                                unde magni.</p>
+                                        </div>
+                                        <h3 class="theme-color">$21</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/20.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/20.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Qui Ut</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Error Itaque Debitis Commodi</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Qui Ut</span>
+                                            <p class="font-light">Quos voluptates aut dolorum. Velit delectus eligendi
+                                                quia est. Explicabo sit dolores laboriosam ullam voluptas.</p>
+                                        </div>
+                                        <h3 class="theme-color">$5</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="product-box">
+                                <div class="img-wrapper">
+                                    <div class="front">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/front/11.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="back">
+                                        <a href="product/details.html">
+                                            <img src="assets/images/fashion/product/back/11.jpg"
+                                                class="bg-img blur-up lazyload" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:void(0)" class="addtocart-btn">
+                                                    <i data-feather="shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">
+                                                    <i data-feather="eye"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="wishlist">
+                                                    <i data-feather="heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <div class="rating-details">
+                                        <span class="font-light grid-content">Cupiditate Minus</span>
+                                        <ul class="rating mt-0">
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star theme-color"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="main-price">
+                                        <a href="product/details.html" class="font-default">
+                                            <h5 class="ms-0">Quidem Architecto Deleniti Hic</h5>
+                                        </a>
+                                        <div class="listing-content">
+                                            <span class="font-light">Cupiditate Minus</span>
+                                            <p class="font-light">Sit repellat fugit recusandae voluptates et est.
+                                                Similique et consequuntur alias officia eos. Quos sed temporibus magnam
+                                                est quo aut. Totam at ducimus occaecati sequi sint sed enim.</p>
+                                        </div>
+                                        <h3 class="theme-color">$7</h3>
+                                        <button class="btn listing-content">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -1901,7 +1651,7 @@
         <input type="hidden" id="categories" name="categories" value="">
     </form>
 
-    <footer class="footer-sm-space">
+    <footer class="footer-sm-space mt-5">
         <div class="main-footer">
             <div class="container">
                 <div class="row gy-4">
@@ -1987,19 +1737,19 @@
                             <div class="footer-content">
                                 <ul>
                                     <li>
-                                        <a href="my-account.php" class="font-dark">Your Orders</a>
+                                        <a href="#" class="font-dark">Your Orders</a>
                                     </li>
                                     <li>
-                                        <a href="my-account.php" class="font-dark">Your Account</a>
+                                        <a href="#" class="font-dark">Your Account</a>
                                     </li>
                                     <li>
-                                        <a href="order-tracking.php" class="font-dark">Track Orders</a>
+                                        <a href="#" class="font-dark">Track Orders</a>
                                     </li>
                                     <li>
-                                        <a href="wishlist.php" class="font-dark">Your Wishlist</a>
+                                        <a href="#" class="font-dark">Your Wishlist</a>
                                     </li>
                                     <li>
-                                        <a href="faq.php" class="font-dark">Shopping FAQs</a>
+                                        <a href="#" class="font-dark">Shopping FAQs</a>
                                     </li>
                                 </ul>
                             </div>
@@ -2138,7 +1888,7 @@
                                             <div class="product-box">
                                                 <div class="img-wrapper">
                                                     <div class="front">
-                                                        <a href="details.php">
+                                                        <a href="product/details.html">
                                                             <img src="assets/images/fashion/product/front/1.jpg"
                                                                 class="bg-img blur-up lazyload" alt="">
                                                         </a>
@@ -2159,7 +1909,7 @@
                                             <div class="product-box">
                                                 <div class="img-wrapper">
                                                     <div class="front">
-                                                        <a href="details.php">
+                                                        <a href="product/details.html">
                                                             <img src="assets/images/fashion/product/front/2.jpg"
                                                                 class="bg-img blur-up lazyload" alt="">
                                                         </a>
@@ -2180,7 +1930,7 @@
                                             <div class="product-box">
                                                 <div class="img-wrapper">
                                                     <div class="front">
-                                                        <a href="details.php">
+                                                        <a href="product/details.html">
                                                             <img src="assets/images/fashion/product/front/3.jpg"
                                                                 class="bg-img blur-up lazyload" alt="">
                                                         </a>
@@ -2201,7 +1951,7 @@
                                             <div class="product-box">
                                                 <div class="img-wrapper">
                                                     <div class="front">
-                                                        <a href="details.php">
+                                                        <a href="product/details.html">
                                                             <img src="assets/images/fashion/product/front/4.jpg"
                                                                 class="bg-img blur-up lazyload" alt="">
                                                         </a>
@@ -2251,6 +2001,7 @@
         $(function () {
             $('[data-bs-toggle="tooltip"]').tooltip()
         });
-    </script>    
+    </script>
 </body>
+
 </html>
