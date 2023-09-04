@@ -1,5 +1,5 @@
-"# Laravel-10-E-Commerce-Project" 
+## Laravel-10-E-Commerce-Project
 
-##Preview the Project Design
+## Preview the Project Design
 
-[Click Here to Preview] (#https://surfsidemedia.github.io/Laravel-10-E-Commerce-Project/index.htm)
+[Click Here to Preview](https://surfsidemedia.github.io/Laravel-10-E-Commerce-Project/index.htm)
