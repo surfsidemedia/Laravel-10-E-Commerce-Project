@@ -156,7 +156,7 @@
                                             <a href="wishlist/list">
                                                 <i data-feather="heart"></i>
                                                 <span id="wishlist-count" class="label label-theme rounded-pill">
-                                                    2
+                                                    1
                                                 </span>
                                             </a>
                                         </div>
@@ -338,86 +338,21 @@
                                 </td>
                                 <td>
 
-                                    <a href="javascript:void(0)"
-                                        onclick="moveToCart('193f632644e06a307cba18917ab13924')" class="icon">
+                                    <a href="javascript:void(0)" class="icon">
                                         <i class="fas fa-shopping-cart"></i>
                                     </a>
-                                    <a href="javascript:void(0)"
-                                        onclick="removeFromWishlist('193f632644e06a307cba18917ab13924')" class="icon">
+                                    <a href="javascript:void(0)" class="icon">
                                         <i class="fas fa-times"></i>
                                     </a>
                                 </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <a href="details.php">
-                                        <img src="assets/images/fashion/product/front/22.jpg"
-                                            class=" blur-up lazyload" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="details.php" class="font-light">Doloribus Consequatur Et Corrupti</a>
-                                    <div class="mobile-cart-content row">
-                                        <div class="col">
-                                            <p>In Stock</p>
-                                        </div>
-                                        <div class="col">
-                                            <p class="fw-bold">$12</p>
-                                        </div>
-                                        <div class="col">
-                                            <h2 class="td-color">
-                                                <a href="javascript:void(0)" class="icon">
-                                                    <i class="fas fa-times"></i>
-                                                </a>
-                                            </h2>
-                                            <h2 class="td-color">
-                                                <a href="cart.php" class="icon">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </a>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="fw-bold">$12</p>
-                                </td>
-                                <td>
-                                    <p>In Stock</p>
-                                </td>
-                                <td>
-
-                                    <a href="javascript:void(0)"
-                                        onclick="moveToCart('303a7f02364f1e92dc60c05c9b15239f')" class="icon">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </a>
-                                    <a href="javascript:void(0)"
-                                        onclick="removeFromWishlist('303a7f02364f1e92dc60c05c9b15239f')" class="icon">
-                                        <i class="fas fa-times"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                            </tr>                           
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Cart Section End -->
-
-    <form id="moveToCart" action="wishlist/move-to-cart" method="POST">
-        <input type="hidden" name="_token" value="k1uMndFUIJdeJurxLSicsC8gS6DjlqhkpN9IFSrB">
-        <input type="hidden" id="rowId" name="rowId" />
-    </form>
-    <form id="deleteFromWishlist" action="wishlist/remove" method="POST">
-        <input type="hidden" name="_token" value="k1uMndFUIJdeJurxLSicsC8gS6DjlqhkpN9IFSrB"> <input type="hidden"
-            name="_method" value="delete"> <input type="hidden" id="rowId_D" name="rowId" />
-    </form>
-
-    <form id="clearWishlist" action="wishlist/clear" method="POST">
-        <input type="hidden" name="_token" value="k1uMndFUIJdeJurxLSicsC8gS6DjlqhkpN9IFSrB"> <input type="hidden"
-            name="_method" value="delete">
-    </form>
+    <!-- Cart Section End -->   
 
     <footer class="footer-sm-space mt-5">
         <div class="main-footer">
@@ -769,22 +704,6 @@
         $(function () {
             $('[data-bs-toggle="tooltip"]').tooltip()
         });
-    </script>
-    <script>
-        function moveToCart(rowId) {
-            $("#rowId").val(rowId);
-            $("#moveToCart").submit();
-        }
-
-        function removeFromWishlist(rowId) {
-            $("#rowId_D").val(rowId);
-            $("#deleteFromWishlist").submit();
-        }
-
-        function clearWishlist() {
-            $("#clearWishlist").submit();
-        }
-    </script>
+    </script>    
 </body>
-
 </html>
